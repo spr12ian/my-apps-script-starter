@@ -1,14 +1,8 @@
-# Google Apps Script Development 💯
+# Google Apps Script Development
 
-The Google Apps Script Starker kit supports the new **V8 JavaScript runtime** that powers Chrome and Node.js. You can write code using modern ECMAScript syntax like Arrow functions, Classes, Template Literals, Destructuring and more.
+This GitHub repository puts together some info and examples on developing Google Apps Script (GAS) using node.js and Clasp with VS Code.
 
-![Google Apps Script Development with ES6](images/google-apps-script-development.png)
-
-Please follow the 👉 **[step-by-step video tutorial](https://www.youtube.com/watch?v=KxdCIbeO4Uk)** 👈 for quickly getting started with Apps Script development inside Visual Studio Code.
-
-You can build GSuite add-ons (for Google Docs, Slides, Gmail and Google Sheets), web applications and workflow automation routines with next-generation JavaScript.
-
-The starter kit is used by [Digital Inspiration](https://digitalinspiration.com/) for building popular Google add-ons including [Gmail Mail Merge](https://gsuite.google.com/marketplace/app/mail_merge_with_attachments/223404411203), [Google Forms Notifications](https://gsuite.google.com/marketplace/app/email_notifications_for_google_forms/984866591130) and [Document Studio](https://gsuite.google.com/marketplace/app/document_studio/429444628321).
+The initial version is based on the [Apps Script Starter](https://awesomeopensource.com/project/labnol/apps-script-starter) provided by [Amit Agarwal](https://www.labnol.org/about), including the useful **[step-by-step YouTube video tutorial](https://www.youtube.com/watch?v=KxdCIbeO4Uk)**.
 
 ## Build with Google Apps Script 🚀
 
@@ -72,24 +66,19 @@ The `.claspignore` file allows you to specify file and directories that you do n
 
 The default `.claspignore` file in the Apps Script Starter kit will push all the JS and HTML inside the `rootDir` folder and ignore all the other files.
 
-## :beginner: Using Git with Google Apps Script
-
-![Google Apps Script - Github](images/github-apps-script.png)
+## Using Git with Google Apps Script
 
 Create a new repository in Github and make a note of the URL of the new repository. Next, open the terminal and run the above commands to push your Apps Script project to Github.
 
-## :fire: Meet the Developer
-
-<img align="left" width="100" height="100" src="https://pbs.twimg.com/profile_images/1144978512832368640/Ej7Zz7E9_400x400.jpg">
-
-[Amit Agarwal](https://www.labnol.org/about) is a web geek, Google Developers Expert (GSuite, Google Apps Script) and author of [labnol.org](https://www.labnol.org/), a popular tech how-to website.
-
-He frequently uses [Google Apps Script](https://ctrlq.org/) to automate workflows and enhance productivity. Reach him on [Twitter](https://twitter.com/labnol) or email `amit@labnol.org`
-
-### :cherry_blossom: Contribution
-
-Contributions and feature requests are welcome. If you are using the Google Apps Script starter package and fixed a bug for yourself, please consider submitting a PR!
-
-### :lock: License
-
-[MIT License](https://github.com/labnol/apps-script-starter/blob/master/LICENSE) (c) [Amit Agarwal](https://www.labnol.org/about/)
+# Remove all Git tracking from the project
+rm -rf .git
+# Initialise the local directory as a Git repository
+git init
+# Add files to the local repository staging area
+git add .
+# Commit staged files to the local repository
+git commit -m "Initial commit"
+# Configure remote repository
+git remote add origin https://
+# Push changes to remote
+git push -u origin master
