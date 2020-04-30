@@ -1,16 +1,23 @@
-# Google Apps Script Development
+# Google Apps Script (GAS) Development as at 2020-05-01
 
-This GitHub repository puts together some info and examples on developing Google Apps Script (GAS) using node.js and Clasp with VS Code.
+This [GitHub repository](https://github.com/spr12ian/my-apps-script-starter/) puts together some info and examples on developing [GAS](https://developers.google.com/apps-script) projects locally using the [VS Code](https://code.visualstudio.com/) editor.
 
-The initial version is based on the [Apps Script Starter](https://awesomeopensource.com/project/labnol/apps-script-starter) provided by [Amit Agarwal](https://www.labnol.org/about), including the useful **[step-by-step YouTube video tutorial](https://www.youtube.com/watch?v=KxdCIbeO4Uk)**.
+My objective is to develop GAS overcoming two key limitations:
 
-## Build with Google Apps Script 🚀
+1. The default Script Editor provided by Google lacks many features found in modern editors.
+2. Google's V8 GAS engine does not support [Javascript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), and managing load order which is file order dependent is a real pain
 
-Setting up a modern development environment for building [Google Apps Script](https://www.labnol.org/topic/google-apps-script/) projects is easy and quick (**[video tutorial](https://www.youtube.com/watch?v=KxdCIbeO4Uk)**).
+[Clasp](https://developers.google.com/apps-script/guides/clasp) is a tool that lets you develop your GAS projects locally. Clasp is written in [Node.js](https://developer.mozilla.org/en-US/docs/Glossary/Node.js) and distributed via the [npm](https://www.npmjs.com/) tool.
+
+Javascript modules are supported in Node.js
+
+The initial version of this repository is based on the [Apps Script Starter](https://awesomeopensource.com/project/labnol/apps-script-starter) provided by [Amit Agarwal](https://www.labnol.org/about), including the useful **[step-by-step YouTube video tutorial](https://www.youtube.com/watch?v=KxdCIbeO4Uk)**.
+
+## Build with Google Apps Script
 
 You also need to install Node.js which includes the npm package manager.
 
-### :package: Getting Started
+### Getting Started
 
 **1.** Clone the repository and install npm dependencies and [utilities](TOOLS.md).
 

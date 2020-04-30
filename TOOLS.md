@@ -1,4 +1,4 @@
-## :star2: Tools
+## Tools
 
 The Google Apps Script Starker kit uses these tools under the hood.
 
