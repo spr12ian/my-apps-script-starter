@@ -1,6 +1,6 @@
 # Google Apps Script (GAS) Development as at 2020-05-01
 
-This [GitHub repository](https://github.com/spr12ian/my-apps-script-starter/) puts together some info and examples on developing [GAS](https://developers.google.com/apps-script) projects locally using the [VS Code](https://code.visualstudio.com/) editor.
+This [GitHub repository](https://github.com/spr12ian/my-apps-script-starter/) puts together some info and examples on developing [GAS](https://developers.google.com/apps-script) projects locally, in a Bash shell, using the [VS Code](https://code.visualstudio.com/) editor.
 
 My objective is to develop GAS overcoming two key limitations:
 
@@ -29,7 +29,7 @@ npm install
 
 **2.** Log in to Google clasp and authorize using your Google account.
 
-```
+``` sh
 npx clasp login
 ```
 
@@ -55,13 +55,9 @@ The `dist` directory contains the bundled code that is pushed to Google Apps Scr
 npm run deploy:prod
 ```
 
-![Google Apps Script - Setup Development Environment](images/npm-install.gif)
-
-#### Enable JavaScript v8 Runtim
+#### Enable JavaScript v8 Runtime
 
 Inside the Google Apps Script editor, select View > Show project manifest to open the `appsscript.json` manifest file in the editor. Add a new `runtimeVersion` field and set the value to `V8`. Save your script.
-
-![Google Apps Script - v8 Runtime](images/apps-script-v8.png)
 
 #### Development vs Production mode
 
@@ -77,6 +73,7 @@ The default `.claspignore` file in the Apps Script Starter kit will push all the
 
 Create a new repository in Github and make a note of the URL of the new repository. Next, open the terminal and run the above commands to push your Apps Script project to Github.
 
+``` sh
 # Remove all Git tracking from the project
 rm -rf .git
 # Initialise the local directory as a Git repository
@@ -89,3 +86,4 @@ git commit -m "Initial commit"
 git remote add origin https://
 # Push changes to remote
 git push -u origin master
+```
