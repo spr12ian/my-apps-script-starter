@@ -3,11 +3,11 @@
   "version": "4.12.0",
   "description": "Setup a local development environment for Google Apps Script",
   "author": {
-    "name": "Amit Agarwal",
-    "email": "amit@labnol.org",
-    "url": "https://www.labnol.org"
+    "name": "Ian Sweeney",
+    "email": "173560+spr12ian@users.noreply.github.com",
+    "url": "https://github.com/spr12ian/"
   },
-  "homepage": "https://digitalinspiration.com/",
+  "homepage": "https://github.com/spr12ian/my-apps-script-starter/",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {

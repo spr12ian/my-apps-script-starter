@@ -5,7 +5,7 @@ This [GitHub repository](https://github.com/spr12ian/my-apps-script-starter/) pu
 My objective is to develop GAS overcoming two key limitations:
 
 1. The default Script Editor provided by Google lacks many features found in modern editors.
-2. Google's V8 GAS engine does not support [Javascript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), and managing load order which is file order dependent is a real pain
+2. Google's V8 GAS engine does not support [Javascript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), and managing load order which is file order dependent is a real pain.
 
 [Clasp](https://developers.google.com/apps-script/guides/clasp) is a tool that lets you develop your GAS projects locally. Clasp is written in [Node.js](https://developer.mozilla.org/en-US/docs/Glossary/Node.js) and distributed via the [npm](https://www.npmjs.com/) tool.
 
@@ -13,9 +13,23 @@ Javascript modules are supported in Node.js
 
 The initial version of this repository is based on the [Apps Script Starter](https://awesomeopensource.com/project/labnol/apps-script-starter) provided by [Amit Agarwal](https://www.labnol.org/about), including the useful **[step-by-step YouTube video tutorial](https://www.youtube.com/watch?v=KxdCIbeO4Uk)**.
 
-## Build with Google Apps Script
+## Stack & [Tools](TOOLS.md)
 
-You also need to install Node.js which includes the npm package manager.
+<html>
+<ul>
+<li>Bash shell</li>
+<li>Git</li>
+<li>Node.js</li>
+<li>Npm</li>
+<li>Babel</li>
+<li>Webpack</li>
+<li>ESLint</li>
+<li>Google Clasp</li>
+<li>Visual Studio Code (VS Code)</li>
+<li>Prettier</li>
+<li>Javascript Style Guide</li>
+</ul>
+</html>
 
 ### Getting Started
 
@@ -54,10 +68,6 @@ The `dist` directory contains the bundled code that is pushed to Google Apps Scr
 ```
 npm run deploy:prod
 ```
-
-#### Enable JavaScript v8 Runtime
-
-Inside the Google Apps Script editor, select View > Show project manifest to open the `appsscript.json` manifest file in the editor. Add a new `runtimeVersion` field and set the value to `V8`. Save your script.
 
 #### Development vs Production mode
 
